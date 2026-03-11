@@ -53,6 +53,6 @@ git checkout main
 ```
 
 ### 設定 Cloudfare 以及通訊轉發
-前往 [cloudfare-config](./.cloudfared/) 查看伺服器套件安裝說明
+前往 [cloudfare-config](/.cloudfared/) 查看伺服器套件安裝說明
 
 ### 開啟伺服器後端的部分
