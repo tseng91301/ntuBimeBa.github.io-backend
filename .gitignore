@@ -1,0 +1,5 @@
+venv/
+__pycache__
+env/.env
+env/test_line_login
+sql/*.sql

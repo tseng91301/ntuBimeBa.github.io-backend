@@ -1,0 +1,14 @@
+curl -X POST http://localhost:3274/api/legacy?legacy_upload=true \
+  -H "Authorization: Bearer <JWT TOKEN>" \
+  -F "name=測試檔案" \
+  -F "year=2024" \
+  -F "grade=3" \
+  -F "semester=1" \
+  -F "teacher=王小明" \
+  -F "subject=資料結構" \
+  -F "course_code=CS101" \
+  -F "type=exam" \
+  -F "description=這是一個測試用檔案" \
+  -F "tags[]=1" \
+  -F "tags[]=3" \
+  -F "file=@./03DA1.pdf"

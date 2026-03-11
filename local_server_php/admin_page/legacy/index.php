@@ -1,0 +1,1 @@
+<script>window.location.href = './add_by_path.php'</script>

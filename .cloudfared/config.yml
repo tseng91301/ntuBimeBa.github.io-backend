@@ -1,0 +1,13 @@
+tunnel: <TUNNEL ID>
+credentials-file: /home/bime/.cloudflared/<TUNNEL ID>.json # 依據創建 tunnel 後回傳的存放位置
+
+ingress:
+  - hostname: ntubimeba.dpdns.org
+    service: http://localhost:3274
+  - hostname: admin.ntubimeba.dpdns.org
+    service: http://localhost:13800
+  - hostname: ssh.ntubimeba.dpdns.org
+    service: http://localhost:13822
+  - hostname: frontend-test.ntubimeba.dpdns.org
+    service: http://localhost:32748
+  - service: http_status:404

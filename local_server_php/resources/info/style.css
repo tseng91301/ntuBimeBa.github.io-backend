@@ -1,0 +1,36 @@
+#inf-show {
+    width: calc(100% - 60px);
+    padding: 10px 30px;
+    font-size: 25px;
+    font-family: system-ui;
+    font-weight: bold;
+    background-color: bisque;
+}
+
+#file-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.file-block {
+    width: auto;
+    min-width: 200px;
+    background-color: rgb(147, 147, 147);
+    max-width: 250px;
+    padding: 15px;
+    font-size: 20px;
+    font-family: system-ui;
+    border-radius: 20px;
+    border: 1px;
+    border-style: solid;
+    margin: 15px;
+}
+
+.file-type {
+    background-color: #b6d0ff;
+}
+
+.folder-type {
+    background-color: #fff191;
+}

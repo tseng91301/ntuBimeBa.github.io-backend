@@ -1,0 +1,1 @@
+mysqldump bime_line_api_user > /mnt/disk1/mysql_backup/backup_$(date +\%F).sql

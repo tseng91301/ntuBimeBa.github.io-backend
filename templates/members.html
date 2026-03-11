@@ -1,0 +1,54 @@
+<!-- templates/members.html -->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>系學會成員</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1><a href="/">臺大生機系學會</a></h1>
+    <nav>
+      <a href="/news">最新消息</a>
+      <a href="/members">系學會成員</a>
+      <a href="/legacy">系產服務</a>
+      <a href="/documents">文件下載</a>
+      <a href="/activity">活動資訊</a>
+      <a href="/contactus">聯絡我們</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>系學會權力架構</h2>
+    <ul>
+      <li>會長：負責總體統籌與對外事務</li>
+      <li>副會長：輔佐會長、內部協調</li>
+      <li>學術部：舉辦課程講座、考古題整理</li>
+      <li>活動部：規劃迎新、宿營、期中期末活動</li>
+      <li>資訊部：系網維護、活動報名平台</li>
+      <li>財務部：帳務處理與收支公開</li>
+    </ul>
+
+    <h2>現任成員資訊</h2>
+    <div class="member-list">
+      <div class="member">
+        <img src="{{ url_for('static', filename='members/president.jpg') }}" alt="會長照片" class="member-photo">
+        <p><strong>職稱：</strong>會長</p>
+        <p><strong>姓名：</strong>張育誠</p>
+        <p><strong>聯絡：</strong>yucheng123@ntu.edu.tw</p>
+      </div>
+      <div class="member">
+        <img src="{{ url_for('static', filename='members/vp.jpg') }}" alt="副會長照片" class="member-photo">
+        <p><strong>職稱：</strong>副會長</p>
+        <p><strong>姓名：</strong>林采庭</p>
+        <p><strong>聯絡：</strong>ctlin456@ntu.edu.tw</p>
+      </div>
+      <!-- 你可以繼續加更多成員 -->
+    </div>
+
+    <p style="margin-top: 2rem; font-style: italic;">※ 本服務需登入才能提供，請向原創空間管理員提出空間借用申請，將 Gmail 發送至：<a href="mailto:ntu.space.admin@gmail.com">ntu.space.admin@gmail.com</a>，協助資源申請。</p>
+  </div>
+</body>
+</html>

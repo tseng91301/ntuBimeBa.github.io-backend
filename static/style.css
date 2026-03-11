@@ -1,0 +1,64 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+}
+
+header {
+  background-color: #004d40;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+h1 a {
+  text-decoration: none;  /* 移除底線 */
+  color: inherit;         /* 使用 h1 原本的顏色 */
+}
+
+h1 a:visited {
+  color: inherit;         /* 點過的也維持原色 */
+}
+
+h1 a:hover {
+  opacity: 0.8;           /* 滑過時微微變淡，提升互動感 */
+}
+
+
+main {
+  padding: 30px;
+}
+
+#announcements ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.gallery img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* 讓 footer 內的文字內容水平置中 */
+footer {
+  text-align: center;
+  padding: 20px 0; /* 可選：為版權區塊添加上下邊距 */
+  background-color: #f8f8f8; /* 可選：為版權區塊添加背景色 */
+  border-top: 1px solid #e0e0e0; /* 可選：頂部邊框線 */
+}
+
+/* 如果需要為版權文字本身調整樣式 */
+.copyright-text {
+  color: #777; /* 字體顏色 */
+  font-size: 0.9em; /* 字體大小 */
+  margin: 0; /* 移除段落預設的上下邊距 */
+}

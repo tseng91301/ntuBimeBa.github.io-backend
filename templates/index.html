@@ -1,0 +1,46 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首頁 - 臺大生機系學會</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+  <h1><a href="/">臺大生機系學會</a></h1>
+    <nav>
+      <a href="/news">最新消息</a>
+      <a href="/members">系學會成員</a>
+      <a href="/legacy">系產服務</a>
+      <a href="/documents">文件下載</a>
+      <a href="/activity">活動資訊</a>
+      <a href="/contactus">聯絡我們</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>最新公告</h2>
+    <div class="announcement">迎新茶會 - 歡迎大一新生來參加迎新茶會！</div>
+    <div class="announcement">系烤報名開始 - 請至系學會辦公室領取報名表。</div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 臺大生機系學會，保留所有權利。</p>
+  </footer>
+
+  <script>
+    fetch("/announcements")
+      .then(res => res.json())
+      .then(data => {
+        const list = document.getElementById("announcement-list");
+        data.forEach(item => {
+          const li = document.createElement("li");
+          li.innerHTML = `<strong>${item.title}</strong>: ${item.content}`;
+          list.appendChild(li);
+        });
+      });
+  </script>
+</body>
+</html>
